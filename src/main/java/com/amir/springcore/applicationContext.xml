@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 
+ <bean name="student" class="com.amir.springcore.Student">
+<property name="studentId" value="100"/>
+<property name="studentName" value="Md Amir Alam"/>
+<property name="studentAddress" value="Gadai Saray"/>
+</bean>
+-->
+<!--this is my second bean  -->
+<!-- Property element invokes setter method -->
+<!-- value element will assign the value in the varible -->
+<!-- 
+<bean name="student1" class="com.amir.springcore.Student">
+<property name="studentId" value="200"/>
+<property name="studentName" value="Md Saif"/>
+<property name="studentAddress" value="Gadai Saray"/>
+</bean>
+ -->
+<bean name="student" class="com.amir.springcore.Student" p:studentId="100" p:studentName="amir" p:studentAddress="Gadai Saray"/>
+<bean name="student1" class="com.amir.springcore.Student" p:studentId="200" p:studentName="sonu" p:studentAddress="Hajipur" />
+</beans>

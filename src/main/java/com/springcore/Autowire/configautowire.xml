@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns:p="http://www.springframework.org/schema/p"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean name="address" class="com.springcore.Autowire.Address">
+<property name="villName" value="Gadai Saray"/>
+<property name="city" value="Hajipur"/>
+<property name="state" value="Bihar"/>
+<property name="country" value="India"/>
+</bean>
+<bean name="employee" class="com.springcore.Autowire.Employee" autowire="byName">
+<property name="empName" value="AMIR"/>
+<property name="empId" value="MSI3966"/>
+</bean>
+
+</beans>
+ 
